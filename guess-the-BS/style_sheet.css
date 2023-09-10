@@ -11,8 +11,10 @@ body {
 }
 
 .center_table {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
 
 th, td, table {

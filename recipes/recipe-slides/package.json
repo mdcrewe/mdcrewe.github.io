@@ -1,0 +1,23 @@
+{
+  "name": "recipe-slides",
+  "version": "1.0.0",
+  "description": "A project that displays cooking recipes as slides with a natural color design.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "recipes",
+    "slides",
+    "cooking",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

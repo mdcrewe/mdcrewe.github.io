@@ -1,28 +1,24 @@
 // This file contains the JavaScript code that handles the functionality of the recipe slides.
 
-const slides = document.querySelectorAll('.slide');
-const nextButton = document.getElementById('next');
-const prevButton = document.getElementById('prev');
-let currentSlide = 0;
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? 'block' : 'none';
-    });
-}
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
+    // Enable swiping
+    simulateTouch: true,
+    touchRatio: 1,
+    touchAngle: 45,
+    grabCursor: true,
 
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-}
-
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
-
-// Initialize the first slide
-showSlide(currentSlide);
+    // Enable keyboard control
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
+});

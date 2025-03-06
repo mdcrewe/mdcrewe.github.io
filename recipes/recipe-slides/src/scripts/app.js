@@ -5,11 +5,6 @@ const swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
     // Enable swiping
     simulateTouch: true,
     touchRatio: 1,

@@ -17,10 +17,9 @@ const swiper = new Swiper('.swiper-container', {
         onlyInViewport: true,
     },
 
-    // Add flip effect
-    effect: 'flip',
-    flipEffect: {
-        slideShadows: true,
-        limitRotation: true,
+    // Add cards effect
+    effect: 'cards',
+    cardsEffect: {
+        slideShadows: false,
     },
 });

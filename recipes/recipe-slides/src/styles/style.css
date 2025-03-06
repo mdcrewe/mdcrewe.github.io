@@ -29,20 +29,6 @@ h1, h2, h3 {
     display: block;
 }
 
-button {
-    background-color: #4a7c2c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #3a5b22;
-}
-
 .nav-buttons {
     display: flex;
     justify-content: space-between;
@@ -56,20 +42,10 @@ button:hover {
 
 .swiper-slide {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 24px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Custom CSS to flip from the left */
-.swiper-container-3d .swiper-slide-shadow-left,
-.swiper-container-3d .swiper-slide-shadow-right {
-    display: none;
-}
-
-.swiper-container-3d .swiper-slide {
-    transform-origin: left center;
 }

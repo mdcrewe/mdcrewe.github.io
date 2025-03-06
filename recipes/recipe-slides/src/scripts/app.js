@@ -17,9 +17,13 @@ const swiper = new Swiper('.swiper-container', {
         onlyInViewport: true,
     },
 
-    // Add cards effect
-    effect: 'cards',
-    cardsEffect: {
-        slideShadows: false,
+    // Add coverflow effect
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
     },
 });

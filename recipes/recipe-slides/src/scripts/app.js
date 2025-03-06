@@ -21,4 +21,11 @@ const swiper = new Swiper('.swiper-container', {
         enabled: true,
         onlyInViewport: true,
     },
+
+    // Add flip effect
+    effect: 'flip',
+    flipEffect: {
+        slideShadows: true,
+        limitRotation: true,
+    },
 });

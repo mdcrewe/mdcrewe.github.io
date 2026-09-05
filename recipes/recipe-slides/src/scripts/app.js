@@ -3,7 +3,8 @@
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
 
     // Enable swiping
     simulateTouch: true,
@@ -26,4 +27,11 @@ const swiper = new Swiper('.swiper-container', {
         modifier: 1,
         slideShadows: true,
     },
+});
+
+document.querySelectorAll('[data-slide-index]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        swiper.slideTo(Number(link.dataset.slideIndex));
+    });
 });
